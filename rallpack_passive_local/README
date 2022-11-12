@@ -1,0 +1,16 @@
+How to run:
+
+replace [SEED] to your selected random number generator seed and execute the command in terminal
+
+mpirun -n 16 python3 simulation.py [SEED]
+
+e.g.
+
+mpirun -n 16 python3 simulation.py 43243
+
+the core count (16) cannot be changed as only 16 core partition mesh is provided.
+you can also scp this package to deigo and use
+
+sbatch job_script
+
+to test it on deigo.
