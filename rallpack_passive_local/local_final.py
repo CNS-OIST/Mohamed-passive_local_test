@@ -112,9 +112,9 @@ sim.run(SIM_END)
 
 if MPI.rank ==0:
     plt.figure(figsize=(10,7))
-    plt.plot(Vrs.time[0],Vrs.data[0])
-    plt.xlabel('time[0]')
-    plt.ylabel('potential')
+    plt.plot(Vrs.time[0],Vrs.data[0]*1000)
+    plt.xlabel('time[s]')
+    plt.ylabel('potential(mV)')
     plt.show()
    
 
