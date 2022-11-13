@@ -18,10 +18,10 @@ MESH_FILES = "local_mesh/local_16cores_v2_dist"
 # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # #
 
 # Sim end time (seconds)
-SIM_END = 0.25
+SIM_END = 0.125
 
 # The current injection in amps
-Iinj = 0.1e-9
+Iinj = 0.1e-12
 
 EF_DT = 1e-6
 SAVE_DT = 5e-5  #
