@@ -8,4 +8,4 @@
 module use /apps/unit/DeSchutterU/.modulefiles
 module load steps/2022_10_15_443f10b_special
 
-mpirun -n $SLURM_NPROCS python3 local_final.py
+mpirun -n $SLURM_NPROCS python3 simulation.py
