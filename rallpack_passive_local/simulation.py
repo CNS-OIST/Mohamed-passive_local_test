@@ -111,12 +111,20 @@ sim.EfieldDT = EF_DT
 sim.run(SIM_END)
 
 #Analatical solution
+#Analatical solution
+#timevector=np.arange(0,SIM_END+SAVE_DT,SAVE_DT)
+#voltagevector=np.zeros(len(timevector))
+#voltagevector[0]= leak_rev
+#for s in range(len(timevector)-1):
+#    Vinf= leak_rev+Ra*Iinj
+ #   voltagevector[s+1]=Vinf+(voltagevector[s]-Vinf)*np.exp(-SAVE_DT/(Ra*.01))
 
 
 
 if MPI.rank ==0:
     plt.figure(figsize=(10,7))
     plt.plot(Vrs.time[0]*1e3,Vrs.data[0]*1e3)
+    #plt.plot(timevector*1e3,voltagevector*1e3, label='Analytical solution')
     plt.xlabel('time[ms]')
     plt.ylabel('potential(mV)')
     plt.show()
