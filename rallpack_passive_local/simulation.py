@@ -130,6 +130,7 @@ if MPI.rank ==0:
     #plt.plot(timevector*1e3,voltagevector*1e3, label='Analytical solution')
     plt.xlabel('time[ms]')
     plt.ylabel('potential(mV)')
+    plt.legend(Vrs.labels)
     plt.show()
    
 
