@@ -79,7 +79,10 @@ with mesh:
 
     #record point(for record the potential)
     record_point2 = [
-        [-1.11999521668e-6, 3.0658738637e-6, -0.107680016989e-6] #potential record
+        [-1.11999521668e-6, 3.0658738637e-6, -0.107680016989e-6],      #on the sphere
+        [-4.30976649627e-6, 1.42941082242e-6, 8.17979885764e-6],       #branch1
+        [0.0601680461391e-6, 1.76150543073e-6, -9.67743441788e-6],     #branch2
+        [11.5727098343e-6, 1.54177794913e-6, 0.05988579459e-6],        #branch3
     ]
     record_tets2 = TetList(mesh.tets[point] for point in record_point2)
    
